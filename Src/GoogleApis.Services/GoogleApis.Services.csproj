@@ -1,0 +1,114 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4B26710F-41F0-460F-B3B6-C998B20C7E6E}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>GoogleApis.Services</RootNamespace>
+    <AssemblyName>GoogleApis.Services</AssemblyName>
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>AnyCPU</PlatformTarget>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json.Net35">
+      <HintPath>..\..\ThirdParty\Newtonsoft.Json.Net35.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Google.Apis.Adexchangebuyer.v1.1.cs" />
+    <Compile Include="Google.Apis.Adexchangebuyer.v1.cs" />
+    <Compile Include="Google.Apis.Adexchangeseller.v1.cs" />
+    <Compile Include="Google.Apis.Adsense.v1.1.cs" />
+    <Compile Include="Google.Apis.Adsense.v1.2.cs" />
+    <Compile Include="Google.Apis.Adsense.v1.cs" />
+    <Compile Include="Google.Apis.Adsensehost.v4.1.cs" />
+    <Compile Include="Google.Apis.Analytics.v2.4.cs" />
+    <Compile Include="Google.Apis.Analytics.v3.cs" />
+    <Compile Include="Google.Apis.Androidpublisher.v1.cs" />
+    <Compile Include="Google.Apis.Audit.v1.cs" />
+    <Compile Include="Google.Apis.Bigquery.v2.cs" />
+    <Compile Include="Google.Apis.Blogger.v2.cs" />
+    <Compile Include="Google.Apis.Blogger.v3.cs" />
+    <Compile Include="Google.Apis.Books.v1.cs" />
+    <Compile Include="Google.Apis.Calendar.v3.cs" />
+    <Compile Include="Google.Apis.Coordinate.v1.cs" />
+    <Compile Include="Google.Apis.Customsearch.v1.cs" />
+    <Compile Include="Google.Apis.Dfareporting.v1.1.cs" />
+    <Compile Include="Google.Apis.Dfareporting.v1.cs" />
+    <Compile Include="Google.Apis.Discovery.v1.cs" />
+    <Compile Include="Google.Apis.Drive.v1.cs" />
+    <Compile Include="Google.Apis.Drive.v2.cs" />
+    <Compile Include="Google.Apis.Freebase.v1.cs" />
+    <Compile Include="Google.Apis.Fusiontables.v1.cs" />
+    <Compile Include="Google.Apis.Groupssettings.v1.cs" />
+    <Compile Include="Google.Apis.Latitude.v1.cs" />
+    <Compile Include="Google.Apis.Licensing.v1.cs" />
+    <Compile Include="Google.Apis.Moderator.v1.cs" />
+    <Compile Include="Google.Apis.Oauth2.v1.cs" />
+    <Compile Include="Google.Apis.Oauth2.v2.cs" />
+    <Compile Include="Google.Apis.Orkut.v2.cs" />
+    <Compile Include="Google.Apis.Pagespeedonline.v1.cs" />
+    <Compile Include="Google.Apis.Plus.v1.cs" />
+    <Compile Include="Google.Apis.Prediction.v1.2.cs" />
+    <Compile Include="Google.Apis.Prediction.v1.3.cs" />
+    <Compile Include="Google.Apis.Prediction.v1.4.cs" />
+    <Compile Include="Google.Apis.Prediction.v1.5.cs" />
+    <Compile Include="Google.Apis.Reseller.v1.cs" />
+    <Compile Include="Google.Apis.Shopping.v1.cs" />
+    <Compile Include="Google.Apis.SiteVerification.v1.cs" />
+    <Compile Include="Google.Apis.Storage.v1beta1.cs" />
+    <Compile Include="Google.Apis.Tasks.v1.cs" />
+    <Compile Include="Google.Apis.Translate.v2.cs" />
+    <Compile Include="Google.Apis.Urlshortener.v1.cs" />
+    <Compile Include="Google.Apis.Webfonts.v1.cs" />
+    <Compile Include="Google.Apis.Youtube.v3.cs" />
+    <Compile Include="Google.Apis.YoutubeAnalytics.v1.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\GoogleApis.Authentication.OAuth2\GoogleApis.Authentication.OAuth2.csproj">
+      <Project>{76106493-68ef-4e44-af2e-971abf29b300}</Project>
+      <Name>GoogleApis.Authentication.OAuth2</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\GoogleApis\GoogleApis.csproj">
+      <Project>{cbb5e638-f8d5-48db-93be-5a7cdd7ed107}</Project>
+      <Name>GoogleApis</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

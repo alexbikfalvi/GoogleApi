@@ -1,0 +1,71 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApis", "Src\GoogleApis\GoogleApis.csproj", "{CBB5E638-F8D5-48DB-93BE-5A7CDD7ED107}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApis.Tools.CodeGen", "Src\GoogleApis.Tools.CodeGen\GoogleApis.Tools.CodeGen.csproj", "{22F162B0-DC09-4F3B-935C-D1FAF2367032}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApis.Authentication.OAuth2", "Src\GoogleApis.Authentication.OAuth2\GoogleApis.Authentication.OAuth2.csproj", "{76106493-68EF-4E44-AF2E-971ABF29B300}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApis.Tools.ServiceGenerator", "Src\GoogleApis.Tools.ServiceGenerator\GoogleApis.Tools.ServiceGenerator.csproj", "{FAD28B73-7185-4D31-8939-8AD91C3A8384}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GoogleApis.Services", "Src\GoogleApis.Services\GoogleApis.Services.csproj", "{4B26710F-41F0-460F-B3B6-C998B20C7E6E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CBB5E638-F8D5-48DB-93BE-5A7CDD7ED107}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CBB5E638-F8D5-48DB-93BE-5A7CDD7ED107}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CBB5E638-F8D5-48DB-93BE-5A7CDD7ED107}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CBB5E638-F8D5-48DB-93BE-5A7CDD7ED107}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22F162B0-DC09-4F3B-935C-D1FAF2367032}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22F162B0-DC09-4F3B-935C-D1FAF2367032}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22F162B0-DC09-4F3B-935C-D1FAF2367032}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22F162B0-DC09-4F3B-935C-D1FAF2367032}.Release|Any CPU.Build.0 = Release|Any CPU
+		{76106493-68EF-4E44-AF2E-971ABF29B300}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{76106493-68EF-4E44-AF2E-971ABF29B300}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{76106493-68EF-4E44-AF2E-971ABF29B300}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{76106493-68EF-4E44-AF2E-971ABF29B300}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FAD28B73-7185-4D31-8939-8AD91C3A8384}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FAD28B73-7185-4D31-8939-8AD91C3A8384}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FAD28B73-7185-4D31-8939-8AD91C3A8384}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FAD28B73-7185-4D31-8939-8AD91C3A8384}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4B26710F-41F0-460F-B3B6-C998B20C7E6E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4B26710F-41F0-460F-B3B6-C998B20C7E6E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4B26710F-41F0-460F-B3B6-C998B20C7E6E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4B26710F-41F0-460F-B3B6-C998B20C7E6E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Src\GoogleApis\GoogleApis.csproj
+		Policies = $0
+		$0.TextStylePolicy = $2
+		$1.FileWidth = 120
+		$1.EolMarker = Windows
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
+		$1.scope = text/plain
+		$2.FileWidth = 120
+		$2.EolMarker = Windows
+		$2.inheritsSet = VisualStudio
+		$2.inheritsScope = text/plain
+		$2.scope = text/x-csharp
+		$0.CSharpFormattingPolicy = $3
+		$3.PropertyBraceStyle = NextLine
+		$3.StatementBraceStyle = NextLine
+		$3.IfElseBraceForcement = AddBraces
+		$3.ForBraceForcement = AddBraces
+		$3.ForEachBraceForcement = AddBraces
+		$3.WhileBraceForcement = AddBraces
+		$3.UsingBraceForcement = AddBraces
+		$3.FixedBraceForcement = AddBraces
+		$3.inheritsSet = Mono
+		$3.inheritsScope = text/x-csharp
+		$3.scope = text/x-csharp
+	EndGlobalSection
+EndGlobal
